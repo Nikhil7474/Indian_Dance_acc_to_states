@@ -238,8 +238,13 @@ const danceForms = {
 };
 
 const danceFormsArr = Object.keys(danceForms);
+
 export default function App() {
   const [dances, setDances] = useState("");
+
+  const [initialHeading, setIntialHeading] = useState("State Lists");
+  
+  const [initialDance, setInitialDance] = useState("State Dances");
 
   function clickHandleChange(dances) {
     setDances(
@@ -251,6 +256,8 @@ export default function App() {
         );
       })
     );
+    setIntialHeading(dances);
+    setInitialDance(dances);
   }
 
   return (
