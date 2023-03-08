@@ -265,9 +265,13 @@ export default function App() {
       <h1 className="head">
         <span className="dif-shade">Indian</span> Dance According to states
       </h1>
-      <h3>State Dance Here</h3>
+
+      <h3>{initialDance} </h3>
+
       <div className="dance-form">{dances}</div>
-      <div className="head bold">States List</div>
+
+      <div className="head bold">{initialHeading}</div>
+
       <div className="states-name">
         {danceFormsArr.map((items) => {
           return (
